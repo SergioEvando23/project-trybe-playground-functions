@@ -14,9 +14,11 @@ function calcArea(a, b) {
 calcArea(3, 5);
 
 // Desafio 3
-function splitSentence() {
-  
+function splitSentence(string, separetor) {
+  let arrayString = string.split(separetor);
+  return arrayString;
 }
+splitSentence("vamo que vamo", " ");
 
 // Desafio 4
 function concatName() {
