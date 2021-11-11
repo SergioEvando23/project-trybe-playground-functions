@@ -1,6 +1,11 @@
 // Desafio 1
 function compareTrue(a, b) {
-  let boolean = a === b;
+  let boolean;
+  if (a && b === false) {
+    boolean = false;
+  } else {
+    boolean = true;
+  }
   return boolean;
 }
 compareTrue(false, false);
