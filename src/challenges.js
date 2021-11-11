@@ -22,7 +22,9 @@ function splitSentence(string, separetor) {
   let arrayString = string.split(separetor);
   return arrayString;
 }
+splitSentence("go Trybe", " ");
 splitSentence("vamo que vamo", " ");
+splitSentence("foguete", " ");
 
 // Desafio 4
 function concatName() {
