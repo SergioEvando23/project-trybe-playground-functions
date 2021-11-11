@@ -51,9 +51,24 @@ footballPoints(1, 2);
 footballPoints(0, 0);
 
 // Desafio 6
-function highestCount() {
-  
+let highestCountArray1 = [9, 1, 2, 3, 9, 5, 7];
+let highestCountArray2 = [0, 4, 4, 4, 9, 2, 1];
+let highestCountArray3 = [0, 0, 0];
+
+function highestCount(array) {
+  let bigger = Math.max(...array);
+  let count = 0;
+  for (let i = 0; i <= array.length; i += 1) {
+    if (bigger === array[i]) {
+      count += 1;
+    }
+  }
+  return count;
 }
+
+highestCount(highestCountArray1);
+highestCount(highestCountArray2);
+highestCount(highestCountArray3);
 
 // Desafio 7
 function catAndMouse() {
