@@ -1,14 +1,9 @@
 // Desafio 1
 function compareTrue(a, b) {
-  let boolean;
-  if (a && b === false) {
-    boolean = false;
-  } else {
-    boolean = true;
-  }
+  let boolean = a === b;
   return boolean;
 }
-compareTrue(false, false);
+compareTrue(false, true);
 
 // Desafio 2
 // Formula de cauclo de area consultada no site do educa mais brasil. (https://www.educamaisbrasil.com.br/enem/matematica/area-do-quadrado)
@@ -20,7 +15,7 @@ calcArea(3, 5);
 
 // Desafio 3
 function splitSentence() {
- 
+  
 }
 
 // Desafio 4
