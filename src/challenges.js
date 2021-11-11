@@ -12,10 +12,11 @@ compareTrue(false, false);
 
 // Desafio 2
 // Formula de cauclo de area consultada no site do educa mais brasil. (https://www.educamaisbrasil.com.br/enem/matematica/area-do-quadrado)
-
-function calcArea() {
- 
+function calcArea(a, b) {
+  let area = a * b;
+  return area;
 }
+calcArea(3, 5);
 
 // Desafio 3
 function splitSentence() {
