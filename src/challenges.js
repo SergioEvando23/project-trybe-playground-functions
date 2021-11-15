@@ -120,6 +120,7 @@ function encode(text) {
     .replace(/u/g, '5');
   return encodedText;
 }
+encode('hi there!');
 
 function decode(text) {
   let decodedText = text
@@ -130,6 +131,7 @@ function decode(text) {
     .replace(/5/g, 'u');
   return decodedText;
 }
+decode('h3 th2r2!');
 
 module.exports = {
   calcArea,
