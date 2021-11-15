@@ -19,6 +19,7 @@ calcArea(51, 1);
 
 // Desafio 3
 // Tive que pedir ajuda ao @AndreTorres - turma XP - tribo B
+
 function splitSentence(string) {
   let arrayString = string.split(' ');
   return arrayString;
@@ -108,13 +109,26 @@ function fizzBuzz(array) {
 fizzBuzz([2, 15, 7, 9, 45]);
 
 // Desafio 9
-function encode() {
+// Códigos Regexp Retirados do exercicio do @PaoloFullone - turma XP - tribo B;
 
-
+function encode(text) {
+  let encodedText = text
+    .replace(/a/g, '1')
+    .replace(/e/g, '2')
+    .replace(/i/g, '3')
+    .replace(/o/g, '4')
+    .replace(/u/g, '5');
+  return encodedText;
 }
-function decode() {
 
-
+function decode(text) {
+  let decodedText = text
+    .replace(/1/g, 'a')
+    .replace(/2/g, 'e')
+    .replace(/3/g, 'i')
+    .replace(/4/g, 'o')
+    .replace(/5/g, 'u');
+  return decodedText;
 }
 
 module.exports = {
