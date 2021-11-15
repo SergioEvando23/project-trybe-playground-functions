@@ -1,21 +1,27 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(arrayObject) {
+  
 }
 
 // Desafio 11
 function generatePhoneNumber() {
-  // seu código aqui
+ 
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(measureA, measureB, measureC) {
+  if (measureA > measureB + measureC 
+      || measureB > measureA + measureC 
+      || measureC > measureA + measureB ) {
+    return false;
+  }
+  return true;
 }
+triangleCheck(10, 14, 8);
 
 // Desafio 13
 function hydrate() {
-  // seu código aqui
+ 
 }
 
 module.exports = {
