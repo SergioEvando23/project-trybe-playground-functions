@@ -1,5 +1,5 @@
 // Desafio 10
-function techList(arrayObject) {
+function techList() {
   
 }
 
