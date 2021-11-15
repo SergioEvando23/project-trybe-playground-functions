@@ -18,14 +18,14 @@ calcArea(5, 2);
 calcArea(51, 1);
 
 // Desafio 3
-
-function splitSentence(string, separetor) {
-  let arrayString = string.split(separetor);
+// Tive que pedir ajuda ao @AndreTorres - turma XP - tribo B
+function splitSentence(string) {
+  let arrayString = string.split(' ');
   return arrayString;
 }
-splitSentence("go Trybe", " ");
-splitSentence("vamo que vamo", " ");
-splitSentence("foguete", " ");
+splitSentence('go Trybe');
+splitSentence('vamo que vamo');
+splitSentence('foguete');
 
 // Desafio 4
 let concatNameArray1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
@@ -50,7 +50,7 @@ footballPoints(14, 8);
 footballPoints(1, 2);
 footballPoints(0, 0);
 
-// Desafio 6
+// Desafio 6IOI
 let highestCountArray1 = [9, 1, 2, 3, 9, 5, 7];
 let highestCountArray2 = [0, 4, 4, 4, 9, 2, 1];
 let highestCountArray3 = [0, 0, 0];
@@ -71,21 +71,48 @@ highestCount(highestCountArray2);
 highestCount(highestCountArray3);
 
 // Desafio 7
-function catAndMouse() {
-  
+function catAndMouse(mouse, cat1, cat2) {
+  let localCat1 = Math.abs(cat1 - mouse);
+  let localCat2 = Math.abs(cat2 - mouse);
+  let winner = null;
+  if (localCat1 < localCat2) {
+    winner = 'cat1';
+  } else if (localCat2 < localCat1) {
+    winner = 'cat2';
+  } else {
+    winner = 'os gatos trombam e o rato foge';
+  }
+  return winner;
 }
+catAndMouse(0, 3, 2);
+catAndMouse(10, 4, 22);
+catAndMouse(1, 0, 2);
 
 // Desafio 8
-function fizzBuzz() {
-  
+function fizzBuzz(array) {
+  let answer = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 3 == 0 && array[i] % 5 == 0) {
+      answer.push('fizzBuzz');
+    } else if (array[i] % 3 != 0 && array[i] % 5 != 0) {
+      answer.push('bug!');
+    } else if (array[i] % 3 == 0) {
+      answer.push('fizz');
+    } else if (array[i] % 5 == 0) {
+      answer.push('buzz');
+    }
+  }
+  return answer.map((item) => item);
 }
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
-  
+
 }
 function decode() {
-  
+
 }
 
 module.exports = {
@@ -101,4 +128,5 @@ module.exports = {
   splitSentence,
 };
 
-// referencia de pesquisa, documentação MDN  (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String)
+// referencia de pesquisa, documentação MDN  (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String);
+// referencia de pesquisa, documentação MDN  (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math);
