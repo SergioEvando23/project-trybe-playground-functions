@@ -93,13 +93,13 @@ catAndMouse(1, 0, 2);
 function fizzBuzz(array) {
   let answer = [];
   for (let i = 0; i < array.length; i++) {
-    if (array[i] % 3 === 0 && array[i] % 5 === 0) {
+    if (array[i] % 3 == 0 && array[i] % 5 == 0) {
       answer.push('fizzBuzz');
-    } else if (array[i] % 3 !== 0 && array[i] % 5 !== 0) {
+    } else if (array[i] % 3 != 0 && array[i] % 5 != 0) {
       answer.push('bug!');
-    } else if (array[i] % 3 === 0) {
+    } else if (array[i] % 3 == 0) {
       answer.push('fizz');
-    } else if (array[i] % 5 === 0) {
+    } else if (array[i] % 5 == 0) {
       answer.push('buzz');
     }
   }
