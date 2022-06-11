@@ -1,6 +1,6 @@
 # Projeto Playground Functions
 
-Esse projeto foi feito no primeiro bloco avaliativo de ensino do curso de desenvolvimento web fullstack da Trybe, ultilizando se de tecnologias como:
+Esse projeto foi feito no segundo bloco avaliativo de ensino do curso de desenvolvimento web fullstack da Trybe, ultilizando se de tecnologias como:
 
 #### JS vanilla
 
